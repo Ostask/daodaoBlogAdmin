@@ -1,0 +1,13 @@
+html,body,ul,li{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height:100%;
+}
+ul,li{
+    list-style: none;;
+}
+div{
+    box-sizing: border-box;
+}
