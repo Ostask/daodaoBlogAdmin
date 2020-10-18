@@ -45,7 +45,7 @@ export default {
             border-radius: 50%;
             overflow: hidden;
             background-color: $background;
-            background-image:url("/user.jpg");
+            background-image:url("../../../public/img/user.jpg");
             background-size:cover;
             background-position: center center;
             transition: all .5s;
