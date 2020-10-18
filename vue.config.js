@@ -11,6 +11,10 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
   },
+  chainWebpack: (config) => {
+    config.resolve.alias
+      .set('img', resolve('public/img'))
+  },
   css: {
     // css预设器配置项
     loaderOptions: {
