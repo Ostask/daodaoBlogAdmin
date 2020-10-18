@@ -7,20 +7,22 @@ function resolve (dir) {
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ? '././' : '/',
   outputDir:'dist',
-  chainWebpack: (config) => {
-    config.resolve.alias
-      .set('@', resolve('src'))
-  },
-  chainWebpack: (config) => {
-    config.resolve.alias
-      .set('img', resolve('public/img'))
+  configureWebpack: {
+    // provide the app's title in webpack's name field, so that
+    // it can be accessed in index.html to inject the correct title.
+    resolve: {
+      alias: {
+        '@': resolve('src'),
+        'img':resolve('public/img')
+      }
+    }
   },
   css: {
     // css预设器配置项
     loaderOptions: {
-		sass: {
-		  additionalData:`@import "./src/style/varible.scss";`
-		}
-	}
-  },
+      sass: {
+        additionalData:`@import "./src/style/varible.scss";`
+      }
+    }
+  }
 }

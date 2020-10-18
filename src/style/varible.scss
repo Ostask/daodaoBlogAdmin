@@ -9,3 +9,15 @@ $nav-text-color:#fff;
 $nav-active-color:#519c3e;
 
 $nav-border-color:#ffeb01;
+
+
+$h1-font-size: 20px;
+
+$border-normal-color:#eee;
+
+$font-normal-color:#666;
+
+@mixin vertical-flex{
+    display: flex;
+    flex-direction: column;
+}
