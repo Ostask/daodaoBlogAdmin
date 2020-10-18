@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22e137"],{f9e3:function(e,n,s){"use strict";s.r(n);var t=function(){var e=this,n=e.$createElement,s=e._self._c||n;return s("div",{staticClass:"message-list"},[e._v(" 留言管理 ")])},a=[],c=s("9ca4"),l={},u=Object(c["a"])(l,t,a,!1,null,null,null);n["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-2d22e137.f72e02ce.js.map
