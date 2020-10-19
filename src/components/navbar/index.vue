@@ -10,7 +10,7 @@
             </div>
         </div>
         <ul class="pages-nav">
-            <router-link tag="li" :class="{'active':item.path == $route.path}" :to="item.path" class="page" v-for="item in routeList" :key="item.meta.icon">
+            <router-link v-show="item.meta.show" tag="li" :class="{'active':item.path == $route.path}" :to="item.path" class="page" v-for="item in routeList[0].children" :key="item.meta.icon">
                 <icon class="icon" :name="item.meta.icon" :scale="2"></icon><span class="text">{{item.meta.title}}</span>
             </router-link>
         </ul>

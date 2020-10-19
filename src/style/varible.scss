@@ -17,6 +17,10 @@ $border-normal-color:#eee;
 
 $font-normal-color:#666;
 
+$font-dark-color:#999;
+
+$font-big-size:20px;
+
 @mixin vertical-flex{
     display: flex;
     flex-direction: column;
