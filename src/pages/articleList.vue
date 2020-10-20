@@ -84,7 +84,10 @@
 </template>
 
 <script>
+import mixin from "@/mixins/public"
+
 export default {
+    mixins: [mixin],
     data(){
         return{
             value:'',
@@ -92,9 +95,7 @@ export default {
         }
     },
     methods:{
-        goto(path){
-            this.$router.push(path)
-        }
+       
     }
 }
 </script>

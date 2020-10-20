@@ -1,7 +1,10 @@
 export default {
     data: function () {
-        return {
-            publicPath: process.env.BASE_URL
+       
+    },
+    methods:{
+        goto(path){
+            this.$router.push(path)
         }
     }
 }
